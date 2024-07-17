@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, black, rgb(96, 96, 196));
+   
+}
+
+.container {
+    background-color: beige;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.container h1, .display{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.stopwatch {
+    max-width: 100%;
+    text-align: center;
+
+}
+
+.display {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #000000; 
+}
+
+.controls button {
+    margin: 5px;
+    width: 50px;
+}
+
+.lap-times {
+    margin-top: 20px;
+}
+
+.lap-times ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 1rem;
+        width: 80%;
+    }
+
+    .display {
+        font-size: 1.5em;
+    }
+
+    .controls button {
+        width: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .display {
+        font-size: 1.2em;
+    }
+
+    .controls button {
+        width: 40px;
+    }
+    .container{
+        width: 100%;
+    }
+}
+footer {
+    max-width: 1500px;
+    text-align: center;
+    margin: auto;
+  }

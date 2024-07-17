@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+    <div class="container py-5">
+        <h1 class="text-center">STOPWATCH</h1>
+        <div class="stopwatch p-3">
+            <div class="display">
+                <span id="display">00:00:00:00</span>
+            </div>
+            <div class="controls">
+                <button class="btn btn-success" id="startBtn"><i class="bi bi-play-fill"></i></button>
+                <button class="btn btn-primary" id="pauseBtn" disabled><i class="bi bi-pause-fill"></i></button>
+                <button class="btn btn-danger" id="stopBtn" disabled><i class="bi bi-stop-fill"></i></button>
+                <button class="btn btn-warning" id="lapBtn" disabled><i class="bi bi-flag-fill"></i></button>
+                <button class="btn btn-secondary" id="resetBtn" disabled><i class="bi bi-arrow-clockwise"></i></button>
+            </div>
+            <div class="lap-times">
+                <ul id="lapTimes"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div id="footer"></div>
+    <h3>Devoloped by<a href=https://github.com/Nirotyay1302>@NIROTYAY MUKHERJEE</a></h3>
+</footer>
+</html>
